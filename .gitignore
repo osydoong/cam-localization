@@ -1,6 +1,6 @@
 # data and weights
-data/
-weights/
+data/*
+weights/*
 
 # Python
 __pycache__/
