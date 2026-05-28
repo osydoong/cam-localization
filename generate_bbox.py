@@ -1,7 +1,8 @@
 import numpy as np 
 import cv2 
 
-THRESHOLDS = [30, 90, 150]
+# Higher thresholds focus on the most affected (strongest) areas of the heatmap
+THRESHOLDS = [150, 180, 200]
 
 def distance_transform(binary_img):
 
@@ -127,4 +128,7 @@ def get_bboxes_from_heatmap(cam_img):
 
     # return highest rank bb (first one after sorting)
     #### Can change this to see diff resutls? 
-    return bboxes[0]
+    # print(bboxes)
+    return bboxes[1]
+    # print("Hello")
+    # return [0,0,0,0]
