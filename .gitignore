@@ -1,0 +1,12 @@
+# data and weights
+data/
+weights/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# outputs
+*.png
+*.tar
