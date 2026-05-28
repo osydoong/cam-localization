@@ -9,5 +9,5 @@ __pycache__/
 main.py
 
 # outputs
-*.png
+# *.png
 *.tar
