@@ -115,7 +115,8 @@ def get_bboxes_from_heatmap(cam_img):
             w = max(0, min(w, cam_img.shape[1] - x))
             h = max(0, min(h, cam_img.shape[0] - y))
 
-            bboxes.append([x, y, w, h])
+            if [x, y, w, h] != [0, 0, 224, 224]:
+                bboxes.append([x, y, w, h])
 
     # MERGE + SORT
 
@@ -129,6 +130,6 @@ def get_bboxes_from_heatmap(cam_img):
     # return highest rank bb (first one after sorting)
     #### Can change this to see diff resutls? 
     # print(bboxes)
-    return bboxes[1]
+    return bboxes[0]
     # print("Hello")
     # return [0,0,0,0]
