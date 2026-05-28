@@ -6,6 +6,7 @@ weights/
 __pycache__/
 *.pyc
 .env
+main.py
 
 # outputs
 *.png
